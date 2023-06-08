@@ -3,9 +3,7 @@ name: Release DEV
 on:
   push:
     tags:
-      - 'v**-alpha'
-      - 'v**-beta'
-      - 'v**-rc'
+      - 'v*.*.*'
 
   workflow_dispatch:
 
