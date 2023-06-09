@@ -2,6 +2,12 @@
 
 A quick-starter CI/CD strategy for simple projects with a modest collection of good practices that every team can implement.
 
+To run the example, create your ECR and set up the required credentials:
+
+```sh
+aws ecr create-repository --repository-name "myapp/api"
+```
+
 ### Non-Production releases
 
 Once the code is ready for live integration testing, create and push your tag:
@@ -58,4 +64,3 @@ on:
 Usually, it is a good idea to manually deploy the new container image, so do not use `latest` images in production. Rather, opt to use tag versions `v1.2.3` only.
 
 [1]: https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
-
