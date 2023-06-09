@@ -6,8 +6,12 @@ name: Go
 on:
   push:
     branches: [ "main" ]
+    paths-ignore: [".github/", ".dockerfile", "Dockerfile", "README.md"]
   pull_request:
     branches: [ "main" ]
+    paths-ignore: [".github/", ".dockerfile", "Dockerfile", "README.md"]
+
+  workflow_dispatch:
 
 jobs:
 
@@ -19,7 +23,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
-        go-version: 1.19
+        go-version: 1.20
 
     - name: Build
       run: go build -v ./...
