@@ -63,4 +63,8 @@ on:
 
 Usually, it is a good idea to manually deploy the new container image, so do not use `latest` images in production. Rather, opt to use tag versions `v1.2.3` only.
 
+### Code continuous build
+
+For continuous integration, create a simple code build that will trigger for pushes and PRs.
+
 [1]: https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
