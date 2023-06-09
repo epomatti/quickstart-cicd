@@ -50,7 +50,7 @@ You should re-use your existing tags for production releases.
 On GitHub you can use [release][1] feature. Alternatively, there's the CLI:
 
 ```sh
-gh release create "v1.2.3" --verify-tag --notes "<release notes>" 
+gh release create "v1.2.3" --verify-tag --notes "New features" 
 ```
 
 Have a workflow to respond for such as in the [release-prod.yml](/.github/workflows/release-prod.yml):
